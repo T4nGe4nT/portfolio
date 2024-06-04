@@ -133,10 +133,18 @@ nav a {
 @media screen and(max-width: 600px) {
     .bstyle {
       width: 90%;
+      overflow: hidden;
+      background-color: #fff;
     }
     .buttons {
         flex-direction: column;
+        overflow: hidden;
+        background-color: #fff;
         
+    }
+    .nav {
+        overflow: hidden;
+        background-color: #fff;
     }
   }
 
