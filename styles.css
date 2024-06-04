@@ -1,7 +1,6 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
     font-family: Arial, sans-serif;
     background-image: url(swirl.gif);
 }
@@ -130,41 +129,22 @@ nav a {
     font-style: italic;
     margin-left: 20px;
 }
-@media screen and(max-width: 600px) {
+@media screen and (max-width: 600px) {
     .bstyle {
       width: 90%;
-      overflow: hidden;
-      background-color: #fff;
+      flex-direction: column;
+    
     }
     .buttons {
+        height: 10%;
+        flex-direction: column; 
+    }
+    .header {
+        height: 10%;
         flex-direction: column;
-        overflow: hidden;
-        background-color: #fff;
-        
     }
-    .nav {
-        overflow: hidden;
-        background-color: #fff;
-    }
-  }
-
-  /* Tablets */
-  @media screen and(min-width: 601px) and (max-width: 900px) {
-    .bstyle {
-      width: 80%;
-    }
-  }
-
-  /* Desktops */
-  @media screen and(min-width: 901px) and (max-width: 1200px) {
-    .bstyle {
-      width: 70%;
-    }
-  }
-
-  /* Large screens */
-  @media screen and(min-width: 1201px) {
-    .bstyle {
-      width: 60%;
+    .main-content {
+        height: 10%;
+        flex-direction: column;
     }
   }
