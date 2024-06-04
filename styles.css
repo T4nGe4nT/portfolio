@@ -147,4 +147,10 @@ nav a {
         height: 10%;
         flex-direction: column;
     }
+    .project-item {
+        flex-direction: column;
+    }
+    .profile-img-container {
+        flex-direction: column;
+    }
   }
