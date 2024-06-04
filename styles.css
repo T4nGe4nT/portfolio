@@ -1,133 +1,142 @@
-/*Over All Theme*/
-.bstyle {
-    background-color: aliceblue;
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
     background-image: url(swirl.gif);
-    padding: 5%;
 }
+
+.bstyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f4f4f4; 
+}
+
 .divbody {
-  background-color:  white;
-  border-radius: 2em;
-  box-shadow: -0.5em 0em 0.5em #7c7c7c;
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
 }
-     /*Footer BootStrap*/
-.boot {
-  padding: 5%;
-  display: flex;
-  direction: row;
-  justify-content: space-evenly;
+
+.poetsen-one-regular1 {
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 2em;
 }
-.secboot {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-between;
-  width: 9%;
-  margin-left: 45.5%;
-  padding-bottom: 2%;
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
 }
-.secboot1 {
-  padding-bottom: 1%;
-}
-       /* End Footer Boot*/ 
-       /* Buttons */
+
 .btn {
-  text-decoration: none;
-  padding: 1.0%;
-  background-color: white;
-  color: black;
-  font-family: "Poetsen One", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 2.5em;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
 }
-.buttons {
-  display: flex;
-  flex-direction: row;
-  padding: 10%;
-}
-      /*End Buttons*/
 
-/*Element & Class Calls*/
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
 
-
-
-img {
-  display: flex;
-  border-radius: 5em;
-  box-shadow: -0.5em 0em 0.5em #7c7c7c;
-  animation: fadeIn 5s;
-}
-.name {
-  text-align: center;
-}
-.indextable {
-  text-align: center;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 5%;
-}
-.projtable {
-  display: flex;
-}
 .p1 {
-  font-size: 1.5em;
-  padding: 5%;
-  line-height: 2;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  animation: fadeIn 5s;
+    flex: 1;
+    font-style: italic;
+    margin-right: 20px;
+    line-height: 1.8em;
+}
+
+.profile-img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: -0.5em 0em 0.5em #ccc;
+    margin-left: 1em;
 }
 
 .p2 {
-  text-align: center;
-  font-family: "Poetsen One";
-  
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.8em;
 }
-.img1 {
-  opacity: 0.5;
-}
-.trp {
-  display: flex;
-  animation: fadeIn 5s;
 
+.secboot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
+
+.social-icon {
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0 10px;
+}
+
+.secboot1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.projects {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-item {
+    display: flex;
+    align-items: center;
+    line-height: 1.5em;
+}
+
+.project-img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.profile-img-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .p3 {
-  padding: 5%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5em;
+    flex: 1;
+    font-style: italic;
+    margin-left: 20px;
 }
-
-
-/*Font Imports*/
-.poetsen-one-regular1 {
-  display: flex;
-  font-family: "Poetsen One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 5rem;
-
-}
-/*Hover Effects*/
-a:hover {
-  color: #7c7c7c;
-
-}
-.boot:hover {
-  color: #7c7c7c;
-}
-/*Animation Keyframes*/
-@keyframes fadeIn {
-  0% {opacity: 0; }
-  100% {opacity: 1;}
-}
-
-
-  /* Mobile devices */
-  @media screen and(max-width: 600px) {
-    .index {
+@media screen and(max-width: 600px) {
+    .bstyle {
       width: 90%;
-  
+    }
+    .buttons {
+        flex-direction: column;
+        
     }
   }
 
@@ -151,17 +160,3 @@ a:hover {
       width: 60%;
     }
   }
-  @media screen and (max-width: 600px) {
-   
-    
-  }
-
-
-
-
-
-
-
-
-
-

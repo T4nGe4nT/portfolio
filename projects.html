@@ -3,58 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Projects</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
 </head>
 <body class="bstyle">
     <div class="divbody">
-    <!--Table For Body-->
-    <table class="indextable">
-        <tr>
-            <td><h1 class="poetsen-one-regular1">My Projects</h1></td>
-            <td><!--Start Nav Bar-->
-                <div>
-                    <nav>
-                    <div>    
+        <!-- Header Section -->
+        <div class="header">
+            <h1 class="poetsen-one-regular1">My Projects</h1>
+            <nav>
+                <div class="buttons">    
                     <a class="btn" href="index.html">Home</a>
                     <a class="btn" href="interest.html">Interest</a>
-                    </div>
-                    </nav>
                 </div>
-            <!--End Nav Bar-->
-        </td>
-        </tr>
-        <tr>
-            <td>
-                <table>
-                    
-                    <tr class="trp">
-                        <td> <a href="https://www.figma.com/design/IgAJga7fAHUkbKXDrbHvoD/CTAC-Prototyping-With-Figma?t=YMe6kBriw0u75n4g-1"><img src="Ecowave.png" alt="Figma Wire Frame" style="width:300px;height:250px;"></a></td>
-                        <td><em> <p class="p3">Creating Wire-Frame drafts with Figma has proven to be an asset. When it comes to bridging the gap between design and code; having something to fall back on can make the diffrence.</p></em></td>
-                    </tr>
-                    <tr class="trp">
-                        <td> <a href="https://github.com/T4nGe4nT"><img src="twinnys.png" alt="Git Hub" style="width:300px;height:200px;"></a></td>
-                        <td> <em><p class="p3">One of the first websites i coded. A true labor of love, showcasing my favorite style of surfboard.</p></em></td>
-                    </tr>
-                    <tr class="trp">
-                        <td> <a href="https://github.com/T4nGe4nT/favfood"><img src="mac.png" alt="Git Hub" style="width:350px;height:200px;"></a></td>
-                        <td> <em><p class="p3"> I made a page about my favorite food. Long live Mac N Cheese.</p></em></td>
+            </nav>
+        </div>
 
-                
-                    </tr>
-                </table>
-            </td>
-            <td class="img1"><img src="stand.jpg" alt="Nick Picture" width="550" ></td>
-        </tr>
-    </table>
-        <p class="p2">Check Out My Social Media </p>
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <div class="projects">
+                <div class="project-item">
+                    <a href="https://www.figma.com/design/IgAJga7fAHUkbKXDrbHvoD/CTAC-Prototyping-With-Figma?t=YMe6kBriw0u75n4g-1">
+                        <img src="Ecowave.png" alt="Figma Wire Frame" class="project-img">
+                    </a>
+                    <p class="p3"><em>Creating Wire-Frame drafts with Figma has proven to be an asset. When it comes to bridging the gap between design and code; having something to fall back on can make the difference.</em></p>
+                </div>
+                <div class="project-item">
+                    <a href="https://github.com/T4nGe4nT">
+                        <img src="twinnys.png" alt="GitHub" class="project-img">
+                    </a>
+                    <p class="p3"><em>One of the first websites I coded. A true labor of love, showcasing my favorite style of surfboard.</em></p>
+                </div>
+                <div class="project-item">
+                    <a href="https://github.com/T4nGe4nT/favfood">
+                        <img src="mac.png" alt="GitHub" class="project-img">
+                    </a>
+                    <p class="p3"><em>I made a page about my favorite food. Long live Mac N Cheese.</em></p>
+                </div>
+            </div>
+            <div class="profile-img-container">
+                <img src="stand.jpg" alt="Nick Picture" class="profile-img">
+            </div>
+        </div>
+
+        <!-- Social Media Section -->
+        <p class="p2">Check Out My Social Media</p>
         <section class="secboot"> 
-        <a href="https://www.facebook.com/nichholcomb/"><img src="fb.png" alt="Facebook" style="width:42px;height:42px;"></a>
-        <a href="https://www.facebook.com/nichholcomb/"><img src="github.png" alt="Git Hub" style="width:42px;height:42px;"></a>
+            <a href="https://www.facebook.com/nichholcomb/"><img src="fb.png" alt="Facebook" class="social-icon"></a>
+            <a href="https://www.facebook.com/nichholcomb/"><img src="github.png" alt="GitHub" class="social-icon"></a>
         </section>
-        <section class="secboot1"> <p class="p2">Contact Me : nichholcomb@gmail.com -Or- (910)-664-3424 </p></section>
+
+        <!-- Contact Section -->
+        <section class="secboot1">
+            <p class="p2">Contact Me: nichholcomb@gmail.com -Or- (910)-664-3424</p>
+        </section>
     </div>    
-    </body>
-    </html>
+</body>
+</html>
