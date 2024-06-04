@@ -6,11 +6,31 @@
 }
 .divbody {
   background-color:  white;
-  border-radius: 10px;
-  box-shadow: -5px 0px 4px #7c7c7c;
+  border-radius: 2em;
+  box-shadow: -0.5em 0em 0.5em #7c7c7c;
 
 }
-/*Element & Class Calls*/
+     /*Footer BootStrap*/
+.boot {
+  padding: 5%;
+  display: flex;
+  direction: row;
+  justify-content: space-evenly;
+}
+.secboot {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  width: 9%;
+  margin-left: 45.5%;
+  padding-bottom: 2%;
+}
+.secboot1 {
+  padding-bottom: 1%;
+}
+       /* End Footer Boot*/ 
+       /* Buttons */
 .btn {
   text-decoration: none;
   padding: 1.0%;
@@ -20,16 +40,22 @@
   font-weight: 200;
   font-style: normal;
   font-size: 2.5em;
- 
 }
 .buttons {
   display: flex;
   flex-direction: row;
+  padding: 10%;
 }
+      /*End Buttons*/
+
+/*Element & Class Calls*/
+
+
+
 img {
   display: flex;
-  border-radius: 20px;
-  box-shadow: -5px 0px 4px #7c7c7c;
+  border-radius: 5em;
+  box-shadow: -0.5em 0em 0.5em #7c7c7c;
   animation: fadeIn 5s;
 }
 .name {
@@ -41,6 +67,9 @@ img {
   padding-right: 5%;
   padding-bottom: 5%;
 }
+.projtable {
+  display: flex;
+}
 .p1 {
   font-size: 1.5em;
   padding: 5%;
@@ -49,32 +78,35 @@ img {
   font-style: italic;
   animation: fadeIn 5s;
 }
-.boot {
-  padding: 5%;
-  display: flex;
-  direction: row;
-  justify-content: space-evenly;
-}
+
 .p2 {
   text-align: center;
   font-family: "Poetsen One";
   
 }
-.secboot {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-between;
-  width: 9%;
-  margin-left: 45.5%;
-  padding-bottom: 2%;
+.img1 {
+  opacity: 0.5;
 }
+.trp {
+  display: flex;
+  animation: fadeIn 5s;
+
+}
+.p3 {
+  padding: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+
+
 /*Font Imports*/
 .poetsen-one-regular1 {
+  display: flex;
   font-family: "Poetsen One", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 5rem;
+
 }
 /*Hover Effects*/
 a:hover {
@@ -91,6 +123,38 @@ a:hover {
 }
 
 
+  /* Mobile devices */
+  @media screen and(max-width: 600px) {
+    .index {
+      width: 90%;
+  
+    }
+  }
+
+  /* Tablets */
+  @media screen and(min-width: 601px) and (max-width: 900px) {
+    .bstyle {
+      width: 80%;
+    }
+  }
+
+  /* Desktops */
+  @media screen and(min-width: 901px) and (max-width: 1200px) {
+    .bstyle {
+      width: 70%;
+    }
+  }
+
+  /* Large screens */
+  @media screen and(min-width: 1201px) {
+    .bstyle {
+      width: 60%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+   
+    
+  }
 
 
 
